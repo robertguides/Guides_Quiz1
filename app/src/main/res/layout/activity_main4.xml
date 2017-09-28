@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guides.quiz1.Activity.Main4Activity">
+
+    <ImageView
+        android:src="@drawable/eclair"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:id="@+id/imageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECLAIR"
+        android:id="@+id/a1"
+        android:layout_marginBottom="10px"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.7"
+        android:id="@+id/a2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/a1"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/a3"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/a2"
+        android:layout_alignEnd="@+id/a2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Released: March 30, 2012"
+        android:id="@+id/a4"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/a3"
+        android:layout_alignStart="@+id/imageView" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150px"
+        android:layout_height="100px"
+        android:text="Home"
+        android:layout_marginBottom="32dp"
+        android:onClick="Home"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/a4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="1"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_marginEnd="18dp"
+        android:onClick="goOne"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="2"
+        android:layout_marginEnd="12dp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toStartOf="@+id/button4"
+        android:onClick="goTwo"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="3"
+        android:onClick="goThree"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toEndOf="@+id/a4"
+        android:layout_marginStart="19dp" />
+
+
+</RelativeLayout>
